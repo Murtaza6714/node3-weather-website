@@ -8,7 +8,7 @@ const forecast =(lat,lon,callback) =>{
        }else if (body.error) {
           callback('unable to find location. try another search.',undefined)
        }else{
-          callback(undefined,'Currently the temperature is '+ body.current.temperature +' degree. Wind speed is ' +body.current.wind_speed+ ' and weather is ' + body.current.weather_description)
+          callback(undefined,'Currently the temperature is '+ body.current.temperature +' degree. Wind speed is ' +body.current.wind_speed+ ' and weather is ' + body.current.weather_descriptions)
        }
     })
  }
